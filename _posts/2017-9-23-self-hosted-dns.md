@@ -21,7 +21,7 @@ After the above steps were completed, my cloud-hosted DNS service was working wo
 
 * [Steps](https://freek.ws/2017/03/18/blocking-dns-amplification-attacks-using-iptables/) performed for Fail2ban setup. Steps shown in documentation have been made to the Puppet configuration below.
 
-```
+{% highlight ruby %}
 class profile::dns {
 
   include profile::firewall::web_server
@@ -75,7 +75,7 @@ class profile::dns {
     action => 'accept',
   }
 }
-```
+{% endhighlight %}
 <center>
 For questions about the complete Puppet configuration setup, please email joseph@josephziegler.com and I'd be happy to provide that information.</center>
 
