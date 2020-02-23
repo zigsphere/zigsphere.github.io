@@ -3,7 +3,7 @@ layout: page
 title: About
 permalink: /about/
 feature-img: "assets/img/pexels/circuit.jpeg"
-tags: [About, Archive]
+tags: [About]
 ---
 
 Hello all! I am Joseph Ziegler, a systems engineer at Uber, based in San Francisco, California. I've been living in the Bay area for around 5 years now and loving every minute of it.
