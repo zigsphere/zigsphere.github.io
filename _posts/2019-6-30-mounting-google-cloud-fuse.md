@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Mounting Google Cloud Storage FUSE with fstab
+tags: [Tech, How-to]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 I'm extremely new to GCP, but I explicitly joined it because I wanted a storage solution where I could mount directly to my machine and just work normally without having to manually drag and drop things to ensure they are backed up. Not only is it easy, it's really cheap. 

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Promotion and House Closure
+tags: [Randomness, Adventures]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 It's been a few weeks since I've posted anything. Wanted to give an update that on Friday, August 4th, I got news that I've been promoted to the next position at Uber. I am now a Systems Engineer II on the Corp Site Reliability Engineering team. This is my 2 years and 2 months at Uber and can't be happier. It's been quite the journey and every day is an adventure. Something that I am so ecstatic about. I would like to thank everyone for all of the support you've given me throughout the years. I wouldn't have done it without you.

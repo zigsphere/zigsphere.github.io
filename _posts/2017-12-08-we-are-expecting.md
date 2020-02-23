@@ -1,6 +1,9 @@
 ---
 layout: post
 title: We are Expecting!
+tags: [Randomness]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 That's right! My wife and I are expecting our very first child. I cannot express how happy I really am to finally be able to live my dream of being a father. I get to see my child be born, watching them grow, and teaching them all I can do be an adult. My wife is only at 10 weeks at this time, so determining the gender will have to wait.

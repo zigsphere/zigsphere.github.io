@@ -1,6 +1,9 @@
 ---
 layout: post
 title: It's Definitely Summer Now
+tags: [Randomness]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 Well it's 97 today where I live. Thank god for the air conditioning. It's expected to be 104 tomorrow. Not liking that one bit. Anything over 80-85 is just too much. You'd think going to the city (San Francisco) would help cool things off a bit, but nope. Yesterday during my lunch break, I walked with one of my work buddies down to the San Francisco ferry pier. I just wanted to get some nice cool air. There was nothing cool about it. It was the warmest weather I've experienced in San Francisco.

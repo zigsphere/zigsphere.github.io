@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Self-hosted DNS Server
+tags: [Tech]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 I didn't think it was a good idea to host my own DNS server back in the day. Was always thinking in the back of my mind that people would DDoS it. Well, one day I exposed my Raspberry PI-hosted DNS server to the internet intentionally, and that's exactly what happened. 

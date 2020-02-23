@@ -1,6 +1,9 @@
 ---
 layout: post
 title: ZigSphere Site Going Down
+tags: [Projects]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 Many of you know of the site that I've had for years, [ZigSphere](https://www.zigsphere.com). The site was intended to help the world with technology and to share technical knowledge with others around the world. My passion is working with tech, but at the same time, sharing what I learn with others. I wanted to create a community, a place to collaborate and share everything we all know into one place.

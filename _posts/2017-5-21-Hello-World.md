@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Hello World!
+tags: [Randomness]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 Hello World!

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Freeing Up Space in the Linux Boot Partition
+tags: [Tech, How-to]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 Is your /boot partition full or almost full and don't know how to clean it up? These instructions will explain how to free up that space. The /boot partition is a very small partition, which is usually ~240MB with a default Ubuntu install. The size may vary with other flavors of Linux. Ubuntu frequently releases updated kernel images, which are automatically installed. Old kernel images are left on the system just in case a newly installed image were to fail. Unfortunately, older images are kept indefinitely if they are not cleaned up. This leads to the /boot partition to slowly fill up.

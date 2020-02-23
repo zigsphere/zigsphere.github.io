@@ -1,6 +1,9 @@
 ---
 layout: post
 title: The Adventures of Buying a House
+tags: [Randomness]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 I live in the San Francisco Bay Area, so thinking about buying a house is not so much a common thing. Why? The housing prices in this area are actually the most expensive in the country. When I found out that Silicon Valley was more than Beverly Hills, that really surprised me.

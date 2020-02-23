@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Bringing Back an Old Hobby
+tags: [Randomness]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 As you may know, I enjoy playing the drums. Chances are, if you've only known me for a few years, you probably never noticed I played them or had any interest in them. Well, that's because I didn't have a set to play with.

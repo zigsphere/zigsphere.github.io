@@ -1,6 +1,9 @@
 ---
 layout: post
 title: It's Been a Long Time
+tags: [Randomness]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 Well, it's been a long time since I've written anything. More than a year, in fact.

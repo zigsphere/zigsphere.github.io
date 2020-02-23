@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Memorial Day Weekend
+tags: [Randomness]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 On most weekends, I am on the computer doing personal tech-related projects, watching random videos on Youtube, or even thinking about what I should be doing next with one of my Raspberry PIs. Tech is not only my job, it's my hobby. Since this weekend is a 3-day weekend, I could have done a fairly large project, but instead, I decided to give the computer a break. 

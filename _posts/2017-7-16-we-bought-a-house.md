@@ -1,6 +1,9 @@
 ---
 layout: post
 title: We Bought a House!
+tags: [Randomness]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 I never thought I'd be saying this at 30 years old in the San Francisco Bay area, but I bought a house with my wife. It wasn't too hard, but there are a lot of things I've learned and I now see the stress that occurs when trying to buy.

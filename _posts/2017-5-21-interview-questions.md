@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Joe's Tech Interview Questions
+tags: [Tech]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 I've been in tech for a long time and have interviewed quite a bit from small to very large companies. All of the questions mentioned on this page are ones I have been asked for IT-related positions. Each time a question was asked, I'd write it down. I thought I would share these with all of you for those who are wanting to study for their next interview. Enjoy!

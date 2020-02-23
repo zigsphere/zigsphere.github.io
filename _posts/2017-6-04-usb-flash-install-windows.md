@@ -1,6 +1,9 @@
 ---
 layout: post
 title: How to make Windows USB flash install media from Linux
+tags: [Tech, How-to]
+author: zigsphere
+excerpt_separator: <!--more-->
 ---
 
 I've already shared how to do this on my forum, but thought it would be beneficial to share it here as well, since many not view the forum.
