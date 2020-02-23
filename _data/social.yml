@@ -1,16 +1,16 @@
 # Icons on the footer
 rss: true        
-email_address:    # Full email address, e.g. "sam@example.com"
+email_address: joseph@josephziegler.com
 behance:
 bitbucket:
 dribbble:
-facebook:
+facebook: josephziegler
 flickr:
 gitlab:
-github: "sylhare"
+github: "zigsphere"
 instagram:
-keybase:
-linkedin:         # Full URL
+keybase: josephziegler
+linkedin: https://www.linkedin.com/in/josephziegler         # Full URL
 pinterest:
 reddit:
 soundcloud:
@@ -18,7 +18,7 @@ stack_overflow:
 stack_exchange:   # Full URL
 steam:
 tumblr:
-twitter:          # "twitter username"
+twitter: joeziegler          # "twitter username"
 vimeo:
 wordpress:
 youtube:          # Youtube channel token like: UCqECaJ8Gagnn7YCbPEzWH6g
@@ -30,7 +30,7 @@ share:
   tumblr:
   pinterest:
   pocket:
-  reddit: true
-  linkedin:
+  reddit:
+  linkedin: true
   wordpress:
   email: true
