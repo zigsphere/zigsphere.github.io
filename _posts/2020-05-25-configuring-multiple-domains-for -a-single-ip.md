@@ -302,7 +302,7 @@ server {
 
 Below you will see how this would be setup in our examples. Several domains configured in Nginx and each of them doing independent things. 
 
-<center><img src="https://www.josephziegler.com/media/many_domains_one_ip.png" width="800" alt="oneip"></center>
+<center><img src="https://www.josephziegler.com/media/many_domains_one_ip.png" alt="oneip"></center>
 
 # Summary
 
