@@ -91,8 +91,8 @@ server {
 	index index.html index.htm;
 	server_name site1.josephziegler.com;    
 	return 301 https://$host$request_uri;
-  access_log            /var/log/nginx/site1.josephziegler.com.access.log combined;
-  error_log             /var/log/nginx/site1.josephziegler.com.error.log;
+	access_log /var/log/nginx/site1.josephziegler.com.access.log combined;
+	error_log  /var/log/nginx/site1.josephziegler.com.error.log;
 	
 }
 
@@ -144,8 +144,8 @@ server {
 	index index.html index.htm;
 	server_name site1.example.com;    
 	return 301 https://$host$request_uri;
-  access_log            /var/log/nginx/site1.example.com.access.log combined;
-  error_log             /var/log/nginx/site1.example.com.error.log;
+	access_log /var/log/nginx/site1.example.com.access.log combined;
+	error_log /var/log/nginx/site1.example.com.error.log;
 	
 }
 
@@ -196,8 +196,8 @@ server {
 	index index.html index.htm;
 	server_name site1.helloworld.com;    
 	return 301 https://$host$request_uri;
-  access_log            /var/log/nginx/site1.helloworld.com.access.log combined;
-  error_log             /var/log/nginx/site1.helloworld.com.error.log;
+	access_log /var/log/nginx/site1.helloworld.com.access.log combined;
+	error_log /var/log/nginx/site1.helloworld.com.error.log;
 	
 }
 
@@ -246,8 +246,8 @@ server {
 	index index.html index.htm;
 	server_name site1.zigsphere.com;    
 	return 301 https://$host$request_uri;
-	access_log            /var/log/nginx/site1.zigsphere.com.access.log combined;
-  error_log             /var/log/nginx/site1.zigsphere.com.error.log;
+	access_log /var/log/nginx/site1.zigsphere.com.access.log combined;
+	error_log /var/log/nginx/site1.zigsphere.com.error.log;
 	
 }
 
