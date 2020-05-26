@@ -91,50 +91,38 @@ server {
 	index index.html index.htm;
 	server_name site1.josephziegler.com;    
 	return 301 https://$host$request_uri;
-    access_log            /var/log/nginx/site1.josephziegler.com.access.log combined;
-  	error_log             /var/log/nginx/site1.josephziegler.com.error.log;
+  access_log            /var/log/nginx/site1.josephziegler.com.access.log combined;
+  error_log             /var/log/nginx/site1.josephziegler.com.error.log;
 	
 }
 
 server {
-  	listen       *:443 ssl;
+  listen       *:443 ssl;
 
-  	server_name  site1.josephziegler.com;
+  server_name  site1.josephziegler.com;
 
-  	ssl on;
-    ssl_certificate /etc/letsencrypt/live/site1.josephziegler.com/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/site1.josephziegler.com/privkey.pem; # managed by Certbot
-  	ssl_dhparam               /etc/ssl/certs/dhparams.pem;
-  	ssl_session_cache         shared:SSL:50m;
-  	ssl_session_timeout       5m;
-  	ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;
-  	ssl_ciphers               ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384;
-  	ssl_prefer_server_ciphers on;
-	ssl_stapling              on;
-  	ssl_stapling_verify       on;
-  	ssl_trusted_certificate   /etc/letsencrypt/live/site1.josephziegler.com/cert.pem;
-  	index  index.html index.htm index.php;
+  ssl on;
+  ssl_certificate /etc/letsencrypt/live/site1.josephziegler.com/fullchain.pem; # managed by Certbot
+  ssl_certificate_key /etc/letsencrypt/live/site1.josephziegler.com/privkey.pem; # managed by Certbot
+  ssl_dhparam               /etc/ssl/certs/dhparams.pem;
+  ssl_session_cache         shared:SSL:50m;
+  ssl_session_timeout       5m;
+  ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;
+  ssl_ciphers               ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384;
+  ssl_prefer_server_ciphers on;
+  ssl_stapling              on;
+  ssl_stapling_verify       on;
+  ssl_trusted_certificate   /etc/letsencrypt/live/site1.josephziegler.com/cert.pem;
+  index  index.html;
 
-  	access_log            /var/log/nginx/ssl-site1.josephziegler.com.access.log combined;
-  	error_log             /var/log/nginx/ssl-site1.josephziegler.com.error.log;
-  	root /var/www/html;
+  access_log            /var/log/nginx/ssl-site1.josephziegler.com.access.log combined;
+  error_log             /var/log/nginx/ssl-site1.josephziegler.com.error.log;
+  root /var/www/html;
 
-	location / {
-          #proxy_pass  http://192.168.251.204:3000;
-          proxy_pass https://www.josephziegler.com;
-          #proxy_pass https://www.google.com;
-          #proxy_pass https://www.themotherboard.tk;
-          #proxy_pass https://zigsphere.github.io;
-          #proxy_set_header Host josepziegler.com;
-          #proxy_set_header Referer https://josephziegler.com;
-          #proxy_pass https://thehealingmind.org/;
-
-          proxy_set_header User-Agent $http_user_agent;
-          proxy_set_header X-Real-IP $remote_addr;
-          proxy_set_header Accept-Encoding "";
-          proxy_set_header Accept-Language $http_accept_language;
-          proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        }
+  location / {
+    index  index.html;
+    root /var/www/html;
+  }
 
 }
 ```
@@ -156,42 +144,42 @@ server {
 	index index.html index.htm;
 	server_name site1.example.com;    
 	return 301 https://$host$request_uri;
-    access_log            /var/log/nginx/site1.example.com.access.log combined;
-  	error_log             /var/log/nginx/site1.example.com.error.log;
+  access_log            /var/log/nginx/site1.example.com.access.log combined;
+  error_log             /var/log/nginx/site1.example.com.error.log;
 	
 }
 
 server {
-  	listen       *:443 ssl;
+  listen       *:443 ssl;
 
-  	server_name  site1.example.com;
+  server_name  site1.example.com;
 
-  	ssl on;
-    ssl_certificate /etc/letsencrypt/live/site1.example.com/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/site1.example.com/privkey.pem; # managed by Certbot
-  	ssl_dhparam               /etc/ssl/certs/dhparams.pem;
-  	ssl_session_cache         shared:SSL:50m;
-  	ssl_session_timeout       5m;
-  	ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;
-  	ssl_ciphers               ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384;
-  	ssl_prefer_server_ciphers on;
-	ssl_stapling              on;
-  	ssl_stapling_verify       on;
-  	ssl_trusted_certificate   /etc/letsencrypt/live/site1.example.com/cert.pem;
-  	index  index.html index.htm index.php;
+  ssl on;
+  ssl_certificate /etc/letsencrypt/live/site1.example.com/fullchain.pem; # managed by Certbot
+  ssl_certificate_key /etc/letsencrypt/live/site1.example.com/privkey.pem; # managed by Certbot
+  ssl_dhparam               /etc/ssl/certs/dhparams.pem;
+  ssl_session_cache         shared:SSL:50m;
+  ssl_session_timeout       5m;
+  ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;
+  ssl_ciphers               ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384;
+  ssl_prefer_server_ciphers on;
+  ssl_stapling              on;
+  ssl_stapling_verify       on;
+  ssl_trusted_certificate   /etc/letsencrypt/live/site1.example.com/cert.pem;
+  index  index.html index.htm index.php;
 
-  	access_log            /var/log/nginx/ssl-site1.example.com.access.log combined;
-  	error_log             /var/log/nginx/ssl-site1.example.com.error.log;
-  	root /var/www/html;
+  access_log            /var/log/nginx/ssl-site1.example.com.access.log combined;
+  error_log             /var/log/nginx/ssl-site1.example.com.error.log;
+  root /var/www/html;
 
-	location / {
-        proxy_pass http://app.example.local:5000;
-        proxy_set_header User-Agent $http_user_agent;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header Accept-Encoding "";
-        proxy_set_header Accept-Language $http_accept_language;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
+  location / {
+    proxy_pass http://app.example.local:5000;
+    proxy_set_header User-Agent $http_user_agent;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header Accept-Encoding "";
+    proxy_set_header Accept-Language $http_accept_language;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  }
 
 }
 ```
@@ -208,42 +196,42 @@ server {
 	index index.html index.htm;
 	server_name site1.helloworld.com;    
 	return 301 https://$host$request_uri;
-    access_log            /var/log/nginx/site1.helloworld.com.access.log combined;
-  	error_log             /var/log/nginx/site1.helloworld.com.error.log;
+  access_log            /var/log/nginx/site1.helloworld.com.access.log combined;
+  error_log             /var/log/nginx/site1.helloworld.com.error.log;
 	
 }
 
 server {
-  	listen       *:443 ssl;
+  listen       *:443 ssl;
 
-  	server_name  site1.helloworld.com;
+  server_name  site1.helloworld.com;
 
-  	ssl on;
-    ssl_certificate /etc/letsencrypt/live/site1.helloworld.com/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/site1.helloworld.com/privkey.pem; # managed by Certbot
-  	ssl_dhparam               /etc/ssl/certs/dhparams.pem;
-  	ssl_session_cache         shared:SSL:50m;
-  	ssl_session_timeout       5m;
-  	ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;
-  	ssl_ciphers               ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384;
-  	ssl_prefer_server_ciphers on;
-	ssl_stapling              on;
-  	ssl_stapling_verify       on;
-  	ssl_trusted_certificate   /etc/letsencrypt/live/site1.helloworld.com/cert.pem;
-  	index  index.html index.htm index.php;
+  ssl on;
+  ssl_certificate /etc/letsencrypt/live/site1.helloworld.com/fullchain.pem; # managed by Certbot
+  ssl_certificate_key /etc/letsencrypt/live/site1.helloworld.com/privkey.pem; # managed by Certbot
+  ssl_dhparam               /etc/ssl/certs/dhparams.pem;
+  ssl_session_cache         shared:SSL:50m;
+  ssl_session_timeout       5m;
+  ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;
+  ssl_ciphers               ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384;
+  ssl_prefer_server_ciphers on;
+  ssl_stapling              on;
+  ssl_stapling_verify       on;
+  ssl_trusted_certificate   /etc/letsencrypt/live/site1.helloworld.com/cert.pem;
+  index  index.html index.htm index.php;
 
-  	access_log            /var/log/nginx/ssl-site1.helloworld.com.access.log combined;
-  	error_log             /var/log/nginx/ssl-site1.helloworld.com.error.log;
-  	root /var/www/html;
+  access_log            /var/log/nginx/ssl-site1.helloworld.com.access.log combined;
+  error_log             /var/log/nginx/ssl-site1.helloworld.com.error.log;
+  root /var/www/html;
 
-	location / {
-        proxy_pass http://applb.helloworld.local:4000;
-        proxy_set_header User-Agent $http_user_agent;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header Accept-Encoding "";
-        proxy_set_header Accept-Language $http_accept_language;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
+  location / {
+    proxy_pass http://applb.helloworld.local:4000;
+    proxy_set_header User-Agent $http_user_agent;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header Accept-Encoding "";
+    proxy_set_header Accept-Language $http_accept_language;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  }
 
 }
 ```
@@ -258,42 +246,42 @@ server {
 	index index.html index.htm;
 	server_name site1.zigsphere.com;    
 	return 301 https://$host$request_uri;
-    access_log            /var/log/nginx/site1.zigsphere.com.access.log combined;
-  	error_log             /var/log/nginx/site1.zigsphere.com.error.log;
+	access_log            /var/log/nginx/site1.zigsphere.com.access.log combined;
+  error_log             /var/log/nginx/site1.zigsphere.com.error.log;
 	
 }
 
 server {
-  	listen       *:443 ssl;
+  listen       *:443 ssl;
 
-  	server_name  site1.zigsphere.com;
+  server_name  site1.zigsphere.com;
 
-  	ssl on;
-    ssl_certificate /etc/letsencrypt/live/site1.zigsphere.com/fullchain.pem; # managed by Certbot
-    ssl_certificate_key /etc/letsencrypt/live/site1.zigsphere.com/privkey.pem; # managed by Certbot
-  	ssl_dhparam               /etc/ssl/certs/dhparams.pem;
-  	ssl_session_cache         shared:SSL:50m;
-  	ssl_session_timeout       5m;
-  	ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;
-  	ssl_ciphers               ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384;
-  	ssl_prefer_server_ciphers on;
-	ssl_stapling              on;
-  	ssl_stapling_verify       on;
-  	ssl_trusted_certificate   /etc/letsencrypt/live/site1.zigsphere.com/cert.pem;
-  	index  index.html index.htm index.php;
+  ssl on;
+  ssl_certificate /etc/letsencrypt/live/site1.zigsphere.com/fullchain.pem; # managed by Certbot
+  ssl_certificate_key /etc/letsencrypt/live/site1.zigsphere.com/privkey.pem; # managed by Certbot
+  ssl_dhparam               /etc/ssl/certs/dhparams.pem;
+  ssl_session_cache         shared:SSL:50m;
+  ssl_session_timeout       5m;
+  ssl_protocols             TLSv1 TLSv1.1 TLSv1.2;
+  ssl_ciphers               ECDHE-RSA-AES256-GCM-SHA512:DHE-RSA-AES256-GCM-SHA512:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384;
+  ssl_prefer_server_ciphers on;
+  ssl_stapling              on;
+  ssl_stapling_verify       on;
+  ssl_trusted_certificate   /etc/letsencrypt/live/site1.zigsphere.com/cert.pem;
+  index  index.html index.htm index.php;
 
-  	access_log            /var/log/nginx/ssl-site1.zigsphere.com.access.log combined;
-  	error_log             /var/log/nginx/ssl-site1.zigsphere.com.error.log;
-  	root /var/www/html;
+  access_log            /var/log/nginx/ssl-site1.zigsphere.com.access.log combined;
+  error_log             /var/log/nginx/ssl-site1.zigsphere.com.error.log;
+  root /var/www/html;
 
-	location / {
-        proxy_pass http://site1.zigsphere.local:80;
-        proxy_set_header User-Agent $http_user_agent;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header Accept-Encoding "";
-        proxy_set_header Accept-Language $http_accept_language;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
+  location / {
+    proxy_pass http://site1.zigsphere.local:80;
+    proxy_set_header User-Agent $http_user_agent;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header Accept-Encoding "";
+    proxy_set_header Accept-Language $http_accept_language;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  }
 
 }
 ```
