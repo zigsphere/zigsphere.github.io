@@ -131,7 +131,7 @@ For this first one, let's go over the config a little bit.
 
  - For each domain, we are listening on both 80 and 443. For port 80, we are redirecting to 443 so that each domain serves SSL traffic. This is done by doing a `return 301 https://$host$request_uri;` 
  - For each domain, we are logging to a separate log file. This is essential so we dont have every domain logging to the SAME config file. This would be incredible hard to troubleshoot if there was an issue.
- - For each domain, we are specifying it's own SSL certificate directory such as `/etc/letsencrypt/live/site1.josephziegler.com/fullchain.pem;`l however, if you have multiple domains on one Nginx host, you will likely only have 1 main directory for ALL domains if you are using Let's Encrypt, so you would specify that here.
+ - For each domain, we are specifying it's own SSL certificate directory such as `/etc/letsencrypt/live/site1.josephziegler.com/fullchain.pem;`; however, if you have multiple domains on one Nginx host, you will likely only have 1 main directory for ALL domains if you are using Let's Encrypt, so you would specify that here.
  - Finally, the location directive, `location /`, which tells Nginx what we are serving. In this case, we are just telling it to look for the index.html file located in /var/www/html. You can set this path to whatever you want. 
 
 ###### /etc/nginx/sites-enabled/example.conf
@@ -291,6 +291,22 @@ server {
 Below you will see how this would be setup in our examples. Several domains configured in Nginx and each of them doing independent things. 
 
 <center><img src="https://www.josephziegler.com/media/many_domains_one_ip.png" alt="oneip"></center>
+
+# Security Concerns
+
+Some people have a thought of "I don't want to expose my app to my network". For instance, you may have your NodeJS application open and listening on port 4000; but you dont want to expose 4000 on the network for people to access directly. I totally get it and that is actually something I do not recommend. The instructions above are just an overview of how to point multiple domains to 1 IP in a nutshell, but not necessarily something you want to to in a production environment. 
+
+So what is the solution to not having to expose your application to your network? Nginx. For each application server, you would also have Nginx installed and reverse proxy locally. This will ensure you only expose Nginx port 80 and/or 443 on your network rather than have your application exposed.
+
+What would this look like?
+
+<center><img src="https://www.josephziegler.com/media/many_domains_one_ip_nginx.png" alt="oneip"></center>
+
+Let me explain a little bit about what is happening here:
+ - The main Nginx server is no longer reverse proxying to the specific application port. Instead, Nginx is installed on each application server. The main Nginx server then reverse proxies to the Nginx service on each application server on port 80 or 443. For each application server, Nginx reverse proxies locally to the local port the application is listening on. 
+  - Notice, the static site that the main Nginx server is reverse proxying to does not change since Nginx was already being used.
+	 - The main Nginx server can reverse proxy either 80 or 443 to Nginx on the application servers. Each one is sufficient; but, of course, 443 will be more secure. The SSL certificate internally can be a self-signed cert or a certificate assigned by a local certificate authority. This does <b>NOT</b> use the public certificate that the main Nginx server is using, such as Let's Encrypt. Just keep this in mind.
+
 
 # Summary
 
