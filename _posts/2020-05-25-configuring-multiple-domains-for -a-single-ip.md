@@ -296,7 +296,7 @@ Below you will see how this would be setup in our examples. Several domains conf
 
 Some people have a thought of "I don't want to expose my app to my network". For instance, you may have your NodeJS application open and listening on port 4000; but you dont want to expose 4000 on the network for people to access directly. I totally get it and that is actually something I do not recommend. The instructions above are just an overview of how to point multiple domains to 1 IP in a nutshell, but not necessarily something you want to do in a production environment. 
 
-So what is the solution to not having to expose your application to your network? Nginx. For each application server, you would also have Nginx installed and reverse proxy locally. This will ensure you only expose Nginx port 80 and/or 443 on your network rather than have your application exposed.
+So what is the solution to not having to expose your application to your network? Nginx is my recommendation. For each application server, you would also have Nginx installed and reverse proxy locally. This will ensure you only expose Nginx port 80 and/or 443 on your network rather than have your application exposed.
 
 What would this look like?
 
