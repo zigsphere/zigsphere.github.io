@@ -304,8 +304,8 @@ What would this look like?
 
 Let me explain a little bit about what is happening here:
  - The main Nginx server is no longer reverse proxying to the specific application port. Instead, Nginx is installed on each application server. The main Nginx server then reverse proxies to the Nginx service on each application server on port 80 or 443. For each application server, Nginx reverse proxies locally to the local port the application is listening on. 
-  - Notice, the static site that the main Nginx server is reverse proxying to does not change since Nginx was already being used.
-	 - The main Nginx server can reverse proxy either 80 or 443 to Nginx on the application servers. Each one is sufficient; but, of course, 443 will be more secure. The SSL certificate internally can be a self-signed cert or a certificate assigned by a local certificate authority. This does <b>NOT</b> use the public certificate that the main Nginx server is using, such as Let's Encrypt. Just keep this in mind.
+ - Notice, the static site that the main Nginx server is reverse proxying to does not change since Nginx was already being used.
+ - The main Nginx server can reverse proxy either 80 or 443 to Nginx on the application servers. Each one is sufficient; but, of course, 443 will be more secure. The SSL certificate internally can be a self-signed cert or a certificate assigned by a local certificate authority. This does <b>NOT</b> use the public certificate that the main Nginx server is using, such as Let's Encrypt. Just keep this in mind.
 
 
 # Summary
