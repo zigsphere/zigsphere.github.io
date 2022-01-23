@@ -23,7 +23,7 @@ after_script:
 branches:
   only:
     - gh-pages
-    - master
+    - main
     - /^v.*$/
 
 env:
