@@ -12,7 +12,7 @@ I'd like to share something with you all that I've been using for about 5ish yea
 
 What I discovered is something called [triggers](https://iterm2.com/documentation-triggers.html), which is a built-in feature within iTerm2. A trigger is an action that is performed when text matching some regular expression is received in a terminal session. Although you can do many things with triggers, I will be discussing how to leverage triggers to automatiically enter in your password each time iTerm prompts you for it.
 
-<center><img src="../assets/images/triggers/trigger.png" width="800" alt="Trigger"></center>
+<center><img src="https://github.com/zigsphere/zigsphere.github.io/blob/main/assets/images/triggers/trigger.png" width="800" alt="Trigger"></center>
 
 ## Instructions
 
