@@ -16,26 +16,26 @@ What I discovered is something called [triggers](https://iterm2.com/documentatio
 
 ## Instructions
 
-1. Open iTerm
+1. Open iTerm.
 2. In the taskbar, go to **iTerm** -> **Preferences..**
-3. Click the **Profiles** tab
-4. Click your profile in the left pane. If you dont have one, you can keep the default selected or create a new one
-5. Click the **Advanced** tab in the right pane
-6. Under **Triggers**, click **Edit**
-7. Click the **+** in the lower left corner of the window to create a new trigger
-8. In the **Regular Expression** column, enter `^(\[sudo\]|(P|p)assword)`. This will trigger if the word password or sudo is shown in iTerm
-9. In the **Action** column dropdown, select **Open Password Manager**
-10. For the **Parameters** column, we will use this in a minute, but for now, this will contain no items. Leave this blank for now
-11. Check both the **Instant** and **Enabled** checkboxes
-12. Click **Close**
-12. Now, within the iTerm window, enter `echo password` then press **enter**
-13. A window will be displayed. Press the **+** in the lower left corner and enter an account name. This can be anything, but really just a description. I just use my name
+3. Click the **Profiles** tab.
+4. Click your profile in the left pane. If you dont have one, you can keep the default selected or create a new one.
+5. Click the **Advanced** tab in the right pane.
+6. Under **Triggers**, click **Edit**.
+7. Click the **+** in the lower left corner of the window to create a new trigger.
+8. In the **Regular Expression** column, enter `^(\[sudo\]|(P|p)assword)`. This will trigger if the word password or sudo is shown in iTerm.
+9. In the **Action** column dropdown, select **Open Password Manager**.
+10. For the **Parameters** column, we will use this in a minute, but for now, this will contain no items. Leave this blank for now.
+11. Check both the **Instant** and **Enabled** checkboxes.
+12. Click **Close**.
+12. Now, within the iTerm window, enter `echo password` then press **enter**.
+13. A window will be displayed. Press the **+** in the lower left corner and enter an account name. This can be anything, but really just a description. I just use my name.
 14. For the username, enter your name or username. This field will not be used either, so enter what you want. 
-15. For the password field, this is where you want to enter your computer / server password(s). You can add as many accounts here if you want if you have different passwords for different systems
-16. Click **Close**
+15. For the password field, this is where you want to enter your computer / server password(s). If you have different passwrods for various systems, you can add as many accounts here for each one.
+16. Click **Close**.
 17. Go back and edit the triggers in iTerm.
 18. Now, within the **parameters** column, select the account you added in step #13.
-19. Click **Close**
+19. Click **Close**.
 20. Now, if you enter `sudo echo hi`, for example, in the iTerm window, when your password is prompted, a window will be displayed. You can simply just press enter to select the account you created in the triggers.
 
 
