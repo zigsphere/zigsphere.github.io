@@ -47,4 +47,4 @@ What I discovered is something called [triggers](https://iterm2.com/documentatio
 1. Is this safe?
     - Yes. After your computer is rebooted or iTerm is restarted, when a password is prompted for the first time, you do have to enter your computer password to unlock your keychain.
 2. I like triggers. What else can I use it for?
-    - There is quite a few articles about this such as https://github.com/scottdware/iterm2-triggers. There are many cool things you can do with this.
+    - There are quite a few articles about this such as https://github.com/scottdware/iterm2-triggers. There are many cool things you can do with this.
