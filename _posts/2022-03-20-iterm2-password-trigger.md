@@ -23,7 +23,7 @@ What I discovered is something called [triggers](https://iterm2.com/documentatio
 5. Click the **Advanced** tab in the right pane.
 6. Under **Triggers**, click **Edit**.
 7. Click the **+** in the lower left corner of the window to create a new trigger.
-8. In the **Regular Expression** column, enter `^(\[sudo\]|(P|p)assword)`. This will trigger if the word password or sudo is shown in iTerm.
+8. In the **Regular Expression** column, enter `^(\[sudo\]|(P|p)assword)`. This will trigger if the line begins with `password` or `[sudo]` in iTerm.
 9. In the **Action** column dropdown, select **Open Password Manager**.
 10. For the **Parameters** column, we will use this in a minute, but for now, this will contain no items. Leave this blank for now.
 11. Check both the **Instant** and **Enabled** checkboxes.
@@ -40,6 +40,8 @@ What I discovered is something called [triggers](https://iterm2.com/documentatio
 
 <center><img src="https://github.com/zigsphere/zigsphere.github.io/blob/main/assets/images/triggers/trigger.gif?raw=true"  alt="Trigger"></center>
 
+## Gotchas
+1. If you are tailing a log file or outputting a file that has the word `password` in it, the trigger will occur. You can cancel the prompt, but can sometimes become annoying if you do this often. If this is the case, you may want yo fine tune the regex that was added in step #8 above.
 
 ## Questions
 1. Is this safe?
