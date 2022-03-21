@@ -38,7 +38,7 @@ What I discovered is something called [triggers](https://iterm2.com/documentatio
 19. Click **Close**.
 20. Now, if you enter `sudo echo hi`, for example, in the iTerm window, when your password is prompted, a window will be displayed. You can simply just press enter to select the account you created in the triggers.
 
-<center><img src="https://github.com/zigsphere/zigsphere.github.io/blob/main/assets/images/triggers/trigger.gif?raw=true" width="800" alt="Trigger"></center>
+<center><img src="https://github.com/zigsphere/zigsphere.github.io/blob/main/assets/images/triggers/trigger.gif?raw=true"  alt="Trigger"></center>
 
 
 ## Questions
