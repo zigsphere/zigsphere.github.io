@@ -41,7 +41,7 @@ What I discovered is something called [triggers](https://iterm2.com/documentatio
 <center><img src="https://github.com/zigsphere/zigsphere.github.io/blob/main/assets/images/triggers/trigger.gif?raw=true"  alt="Trigger"></center>
 
 ## Gotchas
-1. If you are tailing a log file or outputting a file that has the word `password` in it, the trigger will occur. You can cancel the prompt, but can sometimes become annoying if you do this often. If this is the case, you may want yo fine tune the regex that was added in step #8 above.
+1. If you are tailing a log file or outputting a file that has the word `password` in it, the trigger will occur. You can cancel the prompt, but can sometimes become annoying if you do this often. If this is the case, you may want to fine tune the regex that was added in step #8 above.
 
 ## Questions
 1. Is this safe?
