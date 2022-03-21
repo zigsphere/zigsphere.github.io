@@ -6,7 +6,7 @@ author: zigsphere
 excerpt_separator: <!--more-->
 ---
 
-Working in tech requires me to preety much live in the command line. Doing this tends to prompt me for my password quite often, since much of my work requires to run things as sudo either on my Mac on Linux systems accessed with SSH. I'd have to say, typing in my passowrd over and over and over gets pretty annoying, especially if my password takes some time to type (it does).
+Working in tech requires me to pretty much live in the command line. Doing this tends to prompt me for my password quite often, since much of my work requires to run things as sudo either on my Mac on Linux systems accessed with SSH. I'd have to say, typing in my password over and over and over gets pretty annoying, especially if my password takes some time to type (it does).
 
 I'd like to share something with you all that I've been using for about 5ish years now. First of all, if you don't use [iTerm2](https://iterm2.com/), I highly recommend it. If you don't want to, well I guess this post wouldn't make much sense to read then :).
 
@@ -37,6 +37,8 @@ What I discovered is something called [triggers](https://iterm2.com/documentatio
 18. Now, within the **parameters** column, select the account you added in step #13.
 19. Click **Close**.
 20. Now, if you enter `sudo echo hi`, for example, in the iTerm window, when your password is prompted, a window will be displayed. You can simply just press enter to select the account you created in the triggers.
+
+<center><img src="https://github.com/zigsphere/zigsphere.github.io/blob/main/assets/images/triggers/trigger.gif?raw=true" width="800" alt="Trigger"></center>
 
 
 ## Questions
